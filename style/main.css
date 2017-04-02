@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.directions-sprite, .wrapper-no-hover .direction p[data-direction="web development"]:before, .wrapper-no-hover .direction p[data-direction="web design"]:before, .wrapper-no-hover .direction p[data-direction="graphic design"]:before {
+  background-image: url('../img/sprite/directions-s66882f4456.png');
+  background-repeat: no-repeat;
+}
+
+.social-sprite {
+  background-image: url('../img/sprite/social-s20c66c6a4b.png');
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "Code-Bold";
+  src: url("../fonts/Code-Bold/Code-Bold.eot?") format("eot"), url("../fonts/Code-Bold/Code-Bold.woff") format("woff"), url("../fonts/Code-Bold/Code-Bold.ttf") format("truetype"), url("../fonts/Code-Bold/Code-Bold.svg#Code-Bold") format("svg");
+}
+@font-face {
+  font-family: "Code-Light";
+  src: url("../fonts/Code-Light/Code-Light.eot?") format("eot"), url("../fonts/Code-Light/Code-Light.woff") format("woff"), url("../fonts/Code-Light/Code-Light.ttf") format("truetype"), url("../fonts/Code-Light/Code-Light.svg#Code-Light") format("svg");
+}
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot?") format("eot"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic") format("svg");
+}
+html {
+  font-family: 'CenturyGothic',Arial,sans-serif;
+  padding: 16px;
+  background: #fff;
+}
+
+body {
+  background: #f6f6f6;
+  color: #424146;
+}
+
+.bg-grey {
+  background: #f6f6f6;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.nav-btn {
+  font-family: 'Code-Bold', sans-serif;
+  margin-left: 1vw;
+  padding: 15px 5px;
+  color: #000;
+}
+.nav-btn:hover {
+  background: #ffeb00;
+  text-decoration: none;
+}
+
+h2 {
+  margin-left: 2vw;
+  padding-top: 1vh;
+  font-size: calc(3.5rem + 2.5vmin);
+  line-height: calc(5rem + 2.5vmin);
+}
+
+.bg-slider {
+  padding-top: 5vh;
+  height: 60vh;
+  background: url("../img/content/slider-bg-sm.jpg") center;
+}
+
+.shape {
+  shape-outside: url("../img/content/our-worker.png");
+  shape-image-threshold: 0.5;
+}
+
+.fs-0 {
+  font-size: 0;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.yellow-bg-color {
+  background: #ffeb00;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.gray-bg-color {
+  background: #3f3f44;
+}
+
+.first-slider .owl-item .size-slider-img {
+  width: 40vw;
+  height: 50vh;
+}
+
+.list-our-direction li {
+  display: inline-block;
+  margin: 0 10px 30px 0;
+  font-size: 0;
+}
+
+.item-direction {
+  overflow: hidden;
+  position: relative;
+}
+.item-direction .wrapper img {
+  width: 250px;
+  height: 208px;
+  object-fit: contain;
+}
+.item-direction .wrapper .caption {
+  position: relative;
+  height: 100px;
+  background: #3f3f44;
+  padding: 15px 15px 10px 15px;
+  text-align: left;
+  font-size: 1rem;
+  color: #fff;
+}
+.item-direction .wrapper .caption:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #3f3f44;
+}
+.item-direction .wrapper .caption p {
+  font: 1.5rem 'Code-Light', sans-serif;
+  margin-bottom: 10px;
+}
+.item-direction .wrapper .caption a {
+  display: block;
+  text-align: right;
+  color: #fff;
+}
+.item-direction .wrapper .caption a span {
+  color: #ffeb00;
+}
+
+.item-direction:hover .wrapper-no-hover {
+  top: -500px;
+  transition: all 1.5s ease-out;
+}
+
+.wrapper-no-hover {
+  position: absolute;
+  top: 0;
+  transition: all 1.5s ease-out;
+}
+.wrapper-no-hover .direction {
+  width: 250px;
+  height: 208px;
+  background: #ffeb00;
+}
+.wrapper-no-hover .direction p {
+  position: relative;
+  padding-top: 180px;
+  font: 1.5rem 'Code-Bold', sans-serif;
+}
+.wrapper-no-hover .direction p:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrapper-no-hover .direction p[data-direction="web development"]:before {
+  background-position: 0 -198px;
+  height: 97px;
+  width: 110px;
+}
+.wrapper-no-hover .direction p[data-direction="web development"]:before {
+  background-position: 0 -198px;
+  height: 97px;
+  width: 110px;
+}
+.wrapper-no-hover .direction p[data-direction="web design"]:before {
+  background-position: 0 -110px;
+  height: 88px;
+  width: 110px;
+}
+.wrapper-no-hover .direction p[data-direction="graphic design"]:before {
+  background-position: 0 0;
+  height: 110px;
+  width: 88px;
+}
+.wrapper-no-hover .caption {
+  background: #3f3f44;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.border-section {
+  border-top: 1px solid #cacaca;
+}
+
+.grid .w-max {
+  width: calc(40% - 10px);
+}
+
+.grid-item {
+  width: calc(20% - 10px);
+  margin-bottom: 5px;
+}
+.grid-item img {
+  width: 100%;
+}
+
+.name-section {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  background: #3f3f44;
+  color: #ffeb00;
+  text-transform: uppercase;
+}
+.name-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 50px;
+  height: 100%;
+  background: #f6f6f6;
+}
+.name-section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 50px;
+  height: 100%;
+  background: #f6f6f6;
+}

@@ -1,0 +1,210 @@
+
+html {
+  font-family: 'CenturyGothic',Arial,sans-serif;
+  padding: 16px;
+  background: #fff;
+}
+body {
+  background: $light-gray;
+  color: #424146;
+}
+.bg-grey {
+  background: #f6f6f6;;
+}
+.navigation {
+  li{
+    display: inline-block;
+  }
+}
+.nav-btn {
+  font-family: 'Code-Bold', sans-serif;
+  margin-left: 1vw;
+  padding: 15px 5px;
+  color: #000;
+  &:hover {
+    background: $yellow-color;
+    text-decoration: none;
+  }
+}
+h2 {
+  margin-left: 2vw;
+  padding-top: 1vh;
+  font-size: calc(3.5rem + 2.5vmin);
+  line-height: calc(5rem + 2.5vmin);
+}
+.bg-slider {
+  padding-top: 5vh;
+  height: 60vh;
+  background: url("../img/content/slider-bg-sm.jpg") center;
+}
+.shape {
+    shape-outside: url("../img/content/our-worker.png");
+    shape-image-threshold: 0.5;
+}
+.fs-0 {
+  font-size: 0;
+}
+.fs-1 {
+  font-size: 1rem;
+}
+
+.yellow-bg-color {
+  background: $yellow-color;
+}
+.object-fit-contain {
+  object-fit: contain;
+}
+.gray-bg-color {
+  background: $gray-color;
+}
+.first-slider  {
+  .owl-item {
+    .size-slider-img {
+      width: 40vw;
+      height: 50vh;
+    }
+  }
+}
+
+.list-our-direction {
+  li {
+    display: inline-block;
+    margin: 0 10px 30px 0;
+    font-size: 0;
+  }
+}
+.item-direction {
+  overflow: hidden;
+  position: relative;
+  .wrapper {
+    img {
+      width: 250px;
+      height: 208px;
+      object-fit: contain;
+    }
+    .caption {
+      position: relative;
+      height: 100px;
+      background: $gray-color;
+      padding: 15px 15px 10px 15px;
+      text-align: left;
+      font-size: 1rem;
+      color: #fff;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        right: 30px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $gray-color;
+      }
+      p {
+        font: 1.5rem 'Code-Light', sans-serif;
+        margin-bottom: 10px;
+      }
+      a {
+        display: block;
+        text-align: right;
+        color: #fff;
+        span {
+          color: $yellow-color;
+        }
+      }
+    }
+  }
+}
+.item-direction:hover .wrapper-no-hover  {
+   top: -500px;
+    transition: all 1.5s ease-out;
+  }
+.wrapper-no-hover {
+  position: absolute;
+  top: 0;
+  transition: all 1.5s ease-out;
+  .direction {
+    width: 250px;
+    height: 208px;
+    background: $yellow-color;
+    p {
+      position: relative;
+      padding-top: 180px;
+      font: 1.5rem 'Code-Bold', sans-serif;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &[data-direction="web development"]:before {
+        @include directions-sprite(web-development);
+      }
+      &[data-direction="web development"]:before {
+        @include directions-sprite(web-development);
+      }
+      &[data-direction="web design"]:before {
+        @include directions-sprite(web-design-icon);
+      }
+      &[data-direction="graphic design"]:before {
+        @include directions-sprite(graphic-design-icon);
+      }
+    }
+  }
+  .caption {
+    background: $gray-color;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+  }
+}
+
+.border-section {
+  border-top: 1px solid #cacaca;
+}
+.grid {
+  .w-max {
+    width: calc(40% - 10px);
+  }
+}
+  .grid-item {
+  width: calc(20% - 10px);
+    margin-bottom: 5px;
+  img{
+    width: 100%;
+  }
+}
+
+.name-section {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 30px;
+  background: $gray-color;
+  color: $yellow-color;
+  text-transform: uppercase;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 50px;
+    height: 100%;
+    background: $light-gray;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 50px;
+    height: 100%;
+    background: $light-gray;
+  }
+}
